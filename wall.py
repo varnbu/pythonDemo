@@ -16,6 +16,9 @@ jkRotate = pygame.transform.rotate(jk, 20)
 #  旋转并放大缩小  按照倍数
 # jkRotateZoom = pygame.transform.rotozoom(jk, 20, 2)
 jkRotateZoom = pygame.transform.rotozoom(jk, 20, 0.5)
+#  裁切
+jkChop = pygame.transform.chop(jk, (25, 29, 49, 32))
+
 
 jk_x = 0
 jk_y = 630
@@ -54,9 +57,9 @@ while True:
         elif event.type == pygame.MOUSEBUTTONDOWN:
             jk_x, jk_y = event.pos
             fresh_wall()
-            # screen.blit(jk, (jk_x, jk_y))
+            screen.blit(jk, (jk_x, jk_y))
             # screen.blit(jky, (jk_x, jk_y))
-            screen.blit(jkRotateZoom, (jk_x, jk_y))
+            # screen.blit(jkChop, (jk_x, jk_y))
             pygame.display.update()
             screen.fill([25, 25, 25])
         elif event.type == pygame.KEYDOWN:
