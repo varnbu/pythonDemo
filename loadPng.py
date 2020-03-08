@@ -12,8 +12,8 @@ obj = pygame.image.load("image/bg.png").convert_alpha()
 
 random.randrange(10, 100)
 
-plane = 'image/fj.png'
-enemy = 'image/dj.png'
+plane = 'image/fj.tiff'
+enemy = 'image/dj.tiff'
 
 pln = pygame.image.load(plane).convert_alpha()
 enm = pygame.image.load(enemy).convert_alpha()

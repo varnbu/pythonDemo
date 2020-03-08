@@ -5,7 +5,7 @@ pygame.init()
 caption = pygame.display.set_caption('剑客')
 screen = pygame.display.set_mode([1200, 900])
 
-jk = pygame.image.load('image/jk.png').convert_alpha()
+jk = pygame.image.load('image/jk.tiff').convert_alpha()
 # 翻转方法
 jkx = pygame.transform.flip(jk, 1, 0)
 jky = pygame.transform.flip(jk, 0, 1)

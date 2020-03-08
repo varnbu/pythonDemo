@@ -36,7 +36,7 @@ while True:
     screen.blit(bg, (0, 0))
     group.update()
     group.draw(screen)
-    pygame.time.wait(500)
+    pygame.time.wait(200)
     pygame.display.update()
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
