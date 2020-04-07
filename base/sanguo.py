@@ -1,7 +1,7 @@
 import re
 
 
-def find_item(hero):
+def find_hero_count(hero):
     f = open("sanguo_utf8.txt", encoding="utf8")
     data = f.read().replace('\n', '')
     names = re.findall(hero, data)
@@ -13,7 +13,7 @@ with open("san_name.txt", encoding='utf8') as f:
     for line in f:
         names = line.split('|')
         for n in names:
-            name_num = find_item(n)
+            name_num = find_hero_count(n)
             name_dict[n] = name_num
 
 name_sorted = sorted(name_dict.items(), key=lambda item: item[1], reverse=True)
