@@ -5,6 +5,7 @@ def find_hero_count(hero):
     f = open("sanguo_utf8.txt", encoding="utf8")
     data = f.read().replace('\n', '')
     names = re.findall(hero, data)
+
     return len(names)
 
 
